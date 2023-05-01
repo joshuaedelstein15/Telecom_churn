@@ -38,7 +38,7 @@ We ran some basic EDA and here are some of the findings:
 Here is the count of customers per state across the USA:
 
 <div>
-<img src="Images/states.jpg", width = 400, height = 300/>
+<img src="Images/states.jpg", width = 400, height = 700/>
 </div>
 
 Additionally here is a bar graph of the amount of customers who churned:
