@@ -66,12 +66,13 @@ We'll begin our modeling with a baseline model using a Logistic Regression model
 Here are the results of our baseline model:
 
 <div>
-<img src="Images/baseline.jpg", width = 600, height = 300/>
+<img src="Images/baseline.jpg", width = 400, height = 200/>
 </div>
 
 The accuracy is fine at 85%; however, all other scores are less than ideal. This is especially true for our current stakeholder, given that our recall is 18% and f1-score of .27
 
 ### Final Model(Bagging Classifier)
+
 
 
 
