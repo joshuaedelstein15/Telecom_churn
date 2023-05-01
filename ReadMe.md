@@ -89,7 +89,7 @@ This model was tested on a test set of 667 values, of which there was 101 custom
 Let's see the most important features in our model:
 
 <div>
-<img src="Images/feature_importance.jpg", width = 450, height = 200/>
+<img src="Images/feature_importance.jpg", width = 300, height = 170/>
 </div>
 
 - We see that `total day minutes` and `total day charge` are the top 2 most important features. These represent the amount of minutes the customers were on the phone during the day and the amount they were charged for calls during the day. This is interesting to note, and perhaps could require further research why specifically day minutes and charges have a large affect then eve or night minutes.
