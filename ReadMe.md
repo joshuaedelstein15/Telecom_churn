@@ -54,6 +54,25 @@ This came out to a churn rate of 14%
 The data didn't have any missing or duplicated values, as such this step was very brief. 
 
 We dropped the phone number column as it has no affect on the churn percentage. 
-It was interesting to note that all the area codes in this dataset were from California, eventhough the state column listed clients in many states. This was probably done to keep the phone numbers of the original clients secret.
+It was interesting to note that all the area codes in this dataset were from California, eventhough the state column listed clients in many states. This was probably done to keep the confidentiality of the original clients.
+
+## Data Analysis/ Modeling 
+
+We split our data into a training and testing group with a 80-20 split. We then scaled the numerical data, and created dummy variables for the categorical data. We then created our baseline model.
+
+### Baseline Model (Logistic Regression)
+We'll begin our modeling with a baseline model using a Logistic Regression model. This works by adjusting the coefficients of the predictors using gradient descent. Which attempts to minimize the difference between predicted probabilities and the binary values.
+
+Here are the results of our baseline model:
+
+<div>
+<img src="Images/baseline.jpg", width = 600, height = 300/>
+</div>
+
+The accuracy is fine at 85%; however, all other scores are less than ideal. This is especially true for our current stakeholder, given that our recall is 18% and f1-score of .27
+
+### Final Model(Bagging Classifier)
+
+
 
 
