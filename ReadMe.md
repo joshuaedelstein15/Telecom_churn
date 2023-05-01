@@ -26,3 +26,34 @@ In general it is important to consider beforehand whether a false positive or fa
 
 Photo by <a href="https://unsplash.com/@giggiulena?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mario Caruso</a> on <a href="https://unsplash.com/photos/0C9VmZUqcT8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
+## Data Understanding
+This public dataset is provided by the CrowdAnalytix community as part of their churn prediction competition. The real name of the telecom company is anonymized, as well as the year of the data. However, it was used in competition in 2012, so seemingly from around then. 
+
+Data source : https://www.crowdanalytix.com/contests/why-customer-churn
+
+The data consists of 20 column. The last column in the dataset is `churn` which will be our target column. The other columns are predictors columns, these include columns giving details about calls, charges, period with the company, number of customer service calls, as well as other predictors.
+
+We ran some basic EDA and here are some of the findings:
+
+Here is the count of customers per state across the USA:
+
+<div>
+<img src="Images/states.jpg", width = 400, height = 300/>
+</div>
+
+Additionally here is a bar graph of the amount of customers who churned:
+
+<div>
+<img src="Images/churn.jpg", width = 400, height = 300/>
+</div>
+
+This came out to a churn rate of 14%
+
+## Data Preparation
+
+The data didn't have any missing or duplicated values, as such this step was very brief. 
+
+We dropped the phone number column as it has no affect on the churn percentage. 
+It was interesting to note that all the area codes in this dataset were from California, eventhough the state column listed clients in many states. This was probably done to keep the phone numbers of the original clients secret.
+
+
