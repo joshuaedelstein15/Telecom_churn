@@ -85,7 +85,7 @@ For this specific model we decided to go with this model as our final model. Alt
 As we stated earlier, a false negative results in a lost customer, while a false positive results in maybe sending a customer a discount when they would've stayed with the company anyways. As such, for this case we tried to achieve the highest recall without adversely affecting the other metrics.
 
 <div>
-<img src="Images/matrix.jpg", width = 400, height = 300/>
+<img src="Images/matrix.jpg", width = 400, height = 400/>
 </div>
 
 This model was tested on a test set of 667 values, of which there was 101 customers who churned or 15% churn rate. The model correctly predicted customer churn on 622 customers, this gives us the accuracy score we saw above of 93%. The model correctly captured 86 of the 101 customers who churned, giving us the recall score of 85%. The model incorretly predicted churn on 30 customers, which gave us a precision score of 74%.
