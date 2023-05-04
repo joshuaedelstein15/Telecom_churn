@@ -88,7 +88,7 @@ As we stated earlier, a false negative results in a lost customer, while a false
 <img src="Images/matrix.jpg", width = 400, height = 400/>
 </div>
 
-This model was tested on a test set of 667 values, of which there was 101 customers who churned or 15% churn rate. The model correctly predicted customer churn on 622 customers, this gives us the accuracy score we saw above of 93%. The model correctly captured 86 of the 101 customers who churned, giving us the recall score of 85%. The model incorrectly predicted churn on 30 customers, which gave us a precision score of 74%.
+This model was tested on a test set of 667 values, of which there was 101 customers who churned or 15% churn rate. The model correctly predicted customer churn on 622 customers, this gives us the accuracy score we saw above of 93%. The model correctly captured 86 of the 101 customers who churned, giving us the recall score of 85%. The model incorrectly predicted churn on 32 customers, which gave us a precision score of 74%.
 
 Let's see the most important features in our model:
 
@@ -97,7 +97,7 @@ Let's see the most important features in our model:
 </div>
 
 - We see that `total day minutes` and `total day charge` are the top 2 most important features. These represent the amount of minutes the customers were on the phone during the day and the amount they were charged for calls during the day. This is interesting to note, and perhaps could require further research why specifically day minutes and charges have a larger affect then eve or night minutes.
-- The next third important feature is `customer service calls`, this is unsurprising as the more the client deals with the actual customer service, the stronger their opinion will be for the better or worse. Additionally, customers who have to call more, usually have more issues with the company
+- The third most important feature is `customer service calls`, this is unsurprising as the more the client deals with the actual customer service, the stronger their opinion will be for the better or worse. Additionally, customers who have to call more, usually have more issues with the company
 - The fourth and fifth most important features are `total intl calls` and `international plan yes`. These indicate how many calls the customer makes internationally and if they have an international plan in the first place. This should indicate to the cellular company to place a stronger focus on their international plans. 
 
 ## Conclusion
@@ -112,7 +112,7 @@ We will now sum up our findings from our analysis and modeling:
 - Although we had other models with slightly higher accuracy and f1-scores, we chose this model as it had the highest recall without compromising the accuracy or f1-score too much.
 
 ## Recommendations
-We recommend that SyriaTel use the model to preemptively reach out to predicted churn customers and offer some sort of promotional offer, in hopes of getting them to stay with them. Additional recommendations would be to further invest in their customer service, and to take steps to create brand loyalty on a lower budget.. 
+We recommend that SyriaTel use the model to preemptively reach out to predicted churn customers and offer some sort of promotional offer, in hopes of getting them to stay with them. Additional recommendations would be to further invest in their customer service, and to take steps to create brand loyalty on a lower budget.
 
 ## Limitations
 The limitations on this model is that it was produced and testing on a small amount of data. In that 667 clients in the large scheme of things is not very significant. Although it may take more time and resources, the model should be re trained with a larger dataset to test its validity.
