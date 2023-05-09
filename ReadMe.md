@@ -85,17 +85,18 @@ For this specific model we decided to go with this model as our final model. Alt
 As we stated earlier, a false negative results in a lost customer, while a false positive results in maybe sending a customer a discount when they would've stayed with the company anyways. As such, for this case we tried to achieve the highest recall without adversely affecting the other metrics.
 
 <div>
-<img src="Images/matrix.jpg", width = 400, height = 400/>
+<img src="Images/matrix.jpg", width = 500, height = 400/>
 </div>
 
 This model was tested on a test set of 667 values, of which there was 101 customers who churned or 15% churn rate. The model correctly predicted customer churn on 622 customers, this gives us the accuracy score we saw above of 93%. The model correctly captured 86 of the 101 customers who churned, giving us the recall score of 85%. The model incorrectly predicted churn on 32 customers, which gave us a precision score of 74%.
 
-Let's see the most important features in our model:
+Let's see the top 10 most important features in our model:
 
 <div>
-<img src="Images/feature_importance.jpg", width = 300, height = 170/>
+<img src="Images/feature_bar.jpg", width = 450, height = 300/>
 </div>
 
+We'll only discuss the top 5:
 - We see that `total day minutes` and `total day charge` are the top 2 most important features. These represent the amount of minutes the customers were on the phone during the day and the amount they were charged for calls during the day. This is interesting to note, and perhaps could require further research why specifically day minutes and charges have a larger affect then eve or night minutes.
 - The third most important feature is `customer service calls`, this is unsurprising as the more the client deals with the actual customer service, the stronger their opinion will be for the better or worse. Additionally, customers who have to call more, usually have more issues with the company
 - The fourth and fifth most important features are `total intl calls` and `international plan yes`. These indicate how many calls the customer makes internationally and if they have an international plan in the first place. This should indicate to the cellular company to place a stronger focus on their international plans. 
